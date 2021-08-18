@@ -1,0 +1,55 @@
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.mcard-img{
+    width:40%;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px grey, -1px -1px 2px grey, -1px -1px 4px grey, -1px -1px 8px grey, -1px -1px 16px grey;
+}
+.modalcontent{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modalheader {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #5cb85c;
+}
+
+.modalbody {padding: 15px 15px;}
+
+.modalfooter {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.close{
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
