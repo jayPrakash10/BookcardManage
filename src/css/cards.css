@@ -44,52 +44,30 @@
 @media only screen and (max-width:1200px) {
     div.bcard{
         width: 22.5%;
-        border: 1px solid rgba(185, 185, 185, 0.863);
-        border-radius: 5px;
-        background-color: white;
-        text-align: center;
-        margin: 10px;
-        padding: 10px 5px;
-        box-shadow: 0px 0px 5px grey, -1px -1px 2px grey, -1px -1px 4px grey, -1px -1px 8px grey, -1px -1px 16px grey;
     }
 }
 
 @media only screen and (max-width:992px) {
     div.bcard{
         width: 30%;
-        border: 1px solid rgba(185, 185, 185, 0.863);
-        border-radius: 5px;
-        background-color: white;
-        text-align: center;
-        margin: 10px;
-        padding: 10px 5px;
-        box-shadow: 0px 0px 5px grey, -1px -1px 2px grey, -1px -1px 4px grey, -1px -1px 8px grey, -1px -1px 16px grey;
     }
 }
 
 @media only screen and (max-width:769px) {
     .bcard{
         width: 45%;
-        border: 1px solid rgba(185, 185, 185, 0.863);
-        border-radius: 5px;
-        background-color: white;
-        text-align: center;
-        margin: 10px;
-        padding: 10px 5px;
-        box-shadow: 0px 0px 5px grey, -1px -1px 2px grey, -1px -1px 4px grey, -1px -1px 8px grey, -1px -1px 16px grey;
+    }
+    .bcard-img{
+        max-height: 250px;
     }
 }
 
 @media only screen and (max-width:426px) {
      div.bcard{
         width: 100%;
-        border: 1px solid rgba(185, 185, 185, 0.863);
-        border-radius: 5px;
-        background-color: white;
         text-align: left;
         margin: 10px 0px;
         padding: 10px 5px;
-        box-shadow: 0px 0px 5px grey, -1px -1px 2px grey, -1px -1px 4px grey, -1px -1px 8px grey, -1px -1px 16px grey;
     }
     .bcard-img{
         width: 20%;
@@ -109,9 +87,6 @@
     }
     .card-title{
         width: 90%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis
     }
     .bcard-author{
         width: 100%;
