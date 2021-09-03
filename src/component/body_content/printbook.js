@@ -5,7 +5,8 @@ import ShowBookmodal from './showmodal.js';
 import {myfun2} from '../../js/modal.js';
 
 function Printbook(){
-    var col=[];
+    var cards=[];
+    var showmodal=[];
     var [book, delbook]=useState(books);
     let l=books.length;
 
@@ -29,20 +30,20 @@ function Printbook(){
         const cardtext= React.createElement('div',{className:'bcard-text'},[cardtitle,cardauthor,price])
 
         const del = React.createElement(Button,{className:'btn btn-danger',value:book[i].id, onClick:(e)=>{delbooks(e.target.value)}},"Delete");
-        const d = React.createElement('div',{className:'bcard-button'},[del]);
+        const btn = React.createElement('div',{className:'bcard-button'},[del]);
 
-        const cardbody = React.createElement('div',{className:'bcard-body'},[cardtext,d]);
-        const img = React.createElement('img',{className:'bcard-img', src:book[i].photo, alt:'Card image'});
+        const cardbody = React.createElement('div',{className:'bcard-body flip-card-back'},[cardtext,btn]);
+        const img = React.createElement('img',{className:'bcard-img flip-card-front', src:book[i].photo, alt:'Card image'});
+        const card = React.createElement('div',{className:'flip-card'},[img,cardbody]);
+        showmodal.push(<ShowBookmodal ids={book[i].id} index={i}/>);
 
-        const showmodal = <ShowBookmodal ids={book[i].id} index={i}/>
-
-        col.push(React.createElement('div',{className:'bcard'},[img,cardbody,showmodal]));
+        cards.push(React.createElement('div',{className:'bcard'},[card]));
         
     }
-    const di = React.createElement('div',{className:'card-group'},col)
+    const cardgroup = React.createElement('div',{className:'card-group'},[cards,showmodal])
     if(books.length==0)
         return(<div className='cardgroup'><strong>No Records</strong></div>)
-    return(React.createElement('div',{},di));
+    return(React.createElement('div',{},cardgroup));
 }
 
 export default Printbook;
