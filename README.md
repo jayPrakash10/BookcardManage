@@ -17,3 +17,6 @@ Books adding page
 
 Message for succesfully adding book
 ![addsuccess](https://user-images.githubusercontent.com/79151172/129737599-a8c496ea-64e8-4110-8dd2-5e3edb72805e.jpg)
+
+Error message for empty fields
+![fieldempty](https://user-images.githubusercontent.com/79151172/132034477-5f78b9da-2dce-4785-a73c-fb60ef2e9b6b.jpg)
